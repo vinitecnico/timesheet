@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>Welcome to Ionic</h2>
+    <h3>{{vm.test}}</h3>    
+    <button class="button button-balanced" type="button" ng-click="vm.insert()">Insert!</button>
+    <button class="button button-positive" type="button" ng-click="vm.select()">Select!</button>
+    <button class="button button-assertive" type="button" ng-click="vm.remove()">Delete!</button>
+    
+    <table border="1">
+      <tr ng-repeat="x in vm.item">
+          <td>{{x.name}}</td>
+          <td>{{x.dt}}</td> 
+      </tr>
+    </table>
+  </ion-content>
+</ion-view>
